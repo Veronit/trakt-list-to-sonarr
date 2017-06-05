@@ -55,10 +55,6 @@ for x in range (0, numberOfSeries):
 		"seasonFolder": 'true', 
 		"qualityProfileId": qualityProfileId, 
 		"rootFolderPath": rootFolderPath, 
-		"seasons": [{
-			"monitored": 'false', 
-			"seasonNumber": 1
-		}],
 		"addOptions": {
 			"searchForMissingEpisodes": 'false', 
 			"ignoreEpisodesWithFiles": 'false'
