@@ -2,6 +2,7 @@ Small script that adds trakt lists to sonarr.
 
 You need:
 - Python 2.7 or 3 (haven't tested on 3)
+- Requests- library (http://docs.python-requests.org/en/master/user/install/)
 - Trakt API key. Create one from here: https://trakt.tv/oauth/applications
 - Trakt list to be imported to sonarr
 - Sonarr installed (duh.)
