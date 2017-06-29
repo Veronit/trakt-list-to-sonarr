@@ -10,6 +10,7 @@ logging.basicConfig(filename='trakt_list_to_sonarr.log',level=logging.DEBUG)
 traktBaseUrl = 'https://api.trakt.tv'
 traktApiKey = '<your trakt api key>'
 traktList = '<your trakt list to import to sonarr>'
+traktUserName = '<your trakt username>'
 
 sonarrBaseurl = 'http://<your sonarr address with port. eg 192.168.0.1:8989>'
 sonarrApikey = '<your sonarr api key>'
@@ -28,7 +29,7 @@ headers = {
 }
 
 logging.info('Searching for items on list: ' + traktList)
-url = traktBaseUrl + '/users/veron_/lists/'+ traktList +'/items'
+url = traktBaseUrl + '/users/' + traktUserName + '/lists/'+ traktList +'/items'
 response = requests.get(url, headers=headers)
 response_body = json.loads(response.content)
 
